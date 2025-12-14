@@ -7,6 +7,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
 import {ConfigurationPanel} from "@/components/ui/ConfigurationPanel";
+import {PasswordsList} from "@/components/ui/PasswordsList";
 
 export default function HomeScreen() {
   return (
@@ -25,6 +26,7 @@ export default function HomeScreen() {
         <ConfigurationPanel length={5} count={10}/>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
+          <PasswordsList/>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
       </ThemedView>
