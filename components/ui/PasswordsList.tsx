@@ -1,6 +1,7 @@
 import {FlatList, Text} from "react-native";
 import {useSelector} from "react-redux";
 import {selectPasswords} from "@/store/passwordsSlice";
+import {ThemedText} from "@/components/themed-text";
 
 export const PasswordsList: React.FC =  ({}) => {
 
@@ -11,7 +12,7 @@ export const PasswordsList: React.FC =  ({}) => {
             data={passwords}
             renderItem={({item}) => {
                 return (
-                    <Text key={item}>{item}</Text>
+                    <ThemedText key={item}>{item}</ThemedText>
                 )
             }}
         />
